@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background from coral red to peach */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for text */
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bullet point styling */
+p:nth-child(n+2)::before {
+    content: "•";
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+/* Hover effect for paragraphs */
+p:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+</style>
+</head>
+<body>
+<p>QuntNex Bengaluru	Present</p>
+<p>•	Pursuing and Gaining hands-on experience in Full Stack Java, focusing on development, web tech, and DB management.</p>
+<p>•	Developed front-end/back-end skills using HTML, CSS, and Java.</p>
+<p>•	Acquired practical knowledge in Manual Testing.
+</p>
+</body>
+</html>

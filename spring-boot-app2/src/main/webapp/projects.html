@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #c4e0e5, #4ca1af);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Content container styling */
+div {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #444;
+}
+
+/* Highlighted first paragraph (project title) */
+div p:first-of-type {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    border-bottom: 3px solid #4ca1af;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Bullet point styling */
+p:nth-child(n+2)::before {
+    content: "•";
+    color: #4ca1af;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Adding hover effects for interactivity */
+div:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+    div {
+        padding: 20px 15px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    div p:first-of-type {
+        font-size: 20px;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+<body>
+<div>
+<p>Doctor-Chat Bot</p>
+<p>•	I developed a doctor Chatbot using an LSTM model for natural language processing.</p>
+<p>•	I worked on data preprocessing tasks such as tokenization, stemming, and vectorization to prepare the dataset.</p>
+<p>•	The chatbot offers health condition insights, recommendations, and disease-related information, providing users with reliable, AI-driven medical assistance and advice.</p>
+</div>
+<div>
+<p>Heart Disease Prediction: -</p>
+<p>•	I Developed a machine learning model to analyze a dataset of 500 patient records, achieving an accuracy of 85 percentage in detecting heart disease.</p>
+<p>•	The aim of this project is to create a machine learning model for predicting heart disease by analyzing patient data.</p>
+<p>•	This tool will help healthcare professionals identify at-risk individuals early.</p>
+
+</div>
+</body>
+</html>
